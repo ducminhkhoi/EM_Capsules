@@ -2,7 +2,7 @@
 
 '''
 The Capsules layer.
-@author: Yuxian Meng
+@author: Khoi Nguyen
 '''
 # TODO: use less permute() and contiguous()
 
