@@ -8,7 +8,7 @@ and Visdom, follow instructions on [`https://github.com/facebookresearch/visdom`
 Some improvements:
 + Big improvement is that replacing all for loops in routing by matrix multiplication
 + Use visdom to log and visualize learning and testing phases
-+ Add more losses: cross_entropy_loss, margin_loss (from Dynamic Routing Between Capsules paper)
++ Add more losses: cross_entropy_loss, margin_loss (from Dynamic Routing Between Capsules paper), reconstruction_loss
 + Add more routing: angle_routing (from Dynamic Routing Between Capsules paper)
 + Can use multiple workers at the same time to load data much faster
 

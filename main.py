@@ -145,13 +145,11 @@ class ConvCaps(nn.Module):
         R = Variable(torch.zeros([self.b, self.Bkk, self.Cww]), requires_grad=False).cuda()
 
         for i in range(self.iteration):
-            # M-step
             R = F.softmax(R, dim=1)
             R = (R * a_)[..., None]
             sum_R = R.sum(1)
             mu = ((R * V).sum(1) / sum_R)[:, None, :, :]
 
-            # E-step
             if i != self.iteration - 1:
                 u_v = mu.permute(0, 2, 1, 3) @ V.permute(0, 2, 3, 1)
                 u_v = u_v.squeeze().permute(0, 2, 1) / V.norm(2, -1) / mu.norm(2, -1)
