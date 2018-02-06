@@ -2,8 +2,8 @@ This is a Pytorch implementation of EM Capsules in the paper "Matrix capsules wi
 
 The code is based on this repository: https://github.com/shzygmyx/Matrix-Capsules-pytorch.
 
-You need to install pytorch.tnt for logger and visualization, follow instructions on `https://github.com/pytorch/tnt`
-and Visdom, follow instructions on `https://github.com/facebookresearch/visdom`
+You need to install pytorch.tnt for logger and visualization, follow instructions on [`https://github.com/pytorch/tnt`](https://github.com/pytorch/tnt)
+and Visdom, follow instructions on [`https://github.com/facebookresearch/visdom`](https://github.com/facebookresearch/visdom)
 
 Some improvements:
 + Big improvement is that replacing all for loops in routing by matrix multiplication
