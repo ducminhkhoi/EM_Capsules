@@ -1,4 +1,4 @@
-This is a Pytorch implementation of EM Capsules in the paper "Matrix capsules with EM routing"
+This is a Pytorch implementation of EM Capsules in the paper ["Matrix capsules with EM routing"](https://openreview.net/forum?id=HJWLfGWRb)
 
 The code is based on this repository: https://github.com/shzygmyx/Matrix-Capsules-pytorch.
 
